@@ -1,7 +1,5 @@
 import { useState } from "react";
 import ExchangeRateTable from "./component/table";
-import { FiPlus } from "react-icons/fi";
-import Create from "./page/create";
 import { ExchangeRate, SCREEN } from "./utility/types";
 import Update from "./page/update";
 

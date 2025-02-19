@@ -20,8 +20,8 @@ const ExchangeRateTable: React.FC<ExchangeRateTableProps> = ({ handleOpenUpdate 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await apiClient.get("/payaza-exchange-rate");
-        setExchangeData(response.data);
+        const response: any = await apiClient.get("/payaza-exchange-rate");
+        setExchangeData(response?.data);
         setLoading(false);
       } catch (err: any) {
         setError(err.message);

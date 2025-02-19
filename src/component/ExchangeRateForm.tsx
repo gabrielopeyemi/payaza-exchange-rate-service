@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { SCREEN } from "../utility/types";
 
 
@@ -34,10 +33,10 @@ const ExchangeRateForm: React.FC<ExchangeRateFormProps> = ({ initialData, onSubm
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value } = e.target;
     setFormState((prevState) => ({
       ...prevState,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
     }));
   };
 

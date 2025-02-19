@@ -11,7 +11,7 @@ const Create: React.FC<CreateProps> = ({ setScreen }) => {
   };
 
   return (
-    <ExchangeRateForm onSubmit={handleCreate} setScreen={setScreen} />
+    <ExchangeRateForm onSubmit={handleCreate} setScreen={setScreen} isLoading={false} />
   );
 };
 
